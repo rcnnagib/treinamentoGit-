@@ -1,0 +1,38 @@
+ 310  cd treinamentos/
+  311  mkdir github
+  312  cd github/
+  313  mkdir todolist
+  314  mkdir teste
+  315  cd teste/
+  316  git init
+  317  ls
+  318  echo a > a.txt
+  319  echo b > b.txt
+  320  ls
+  321  git commit
+  322  git status
+  323  git add -A
+  324  git status
+  325  git commit -m "a.txt e b.txt"
+  326  git status
+  327  echo c > c.txt
+  328  git status
+  329  git add -A
+  330  git commit -m "c.txt"
+  331  echo c2 > c.txt
+  332*
+  333  git status
+  334  git add -A
+  335  git status
+  336  git commit -m "alterando c.txt"
+  337  mv c.txt c2.txt
+  338  git status
+  339  git add -A
+  340  git commit -m "renomeado c.txt para c2.txt"
+  341  git log oneline
+  342  git log --oneline
+  343  echo cat history > historico.txt
+  344  ls
+  345  vi historico.txt
+  346  history
+
