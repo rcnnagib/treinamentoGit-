@@ -1,7 +1,6 @@
- 310  cd treinamentos/
+  310  cd treinamentos/
   311  mkdir github
   312  cd github/
-  313  mkdir todolist
   314  mkdir teste
   315  cd teste/
   316  git init
@@ -35,4 +34,60 @@
   344  ls
   345  vi historico.txt
   346  history
+  347  git branch
+  348  git branch feature1
+  349  git branch
+  350  cat .git/refs/heads/master
+  351  cat .git/refs/heads/feature1
+  352  git log --oneline --deorate
+  353  git log --oneline --decorate
+  354  cat .git/HEAD
+  355  git checkout feature1
+  356  cat .git/HEAD
+  357  echo d > d.txt
+  358  git add -A
+  359  git commit -m d.txt
+  360  git status
+  361  git log --oneline --decorate
+  362  ls -la
+  363  git checkout master
+  364  ls -la
+  365  git log --oneline --decorate
+  366  git log --oneline --decorate --all
+  367  git checkout master
+  368  git merge feature1
+  369  git log --oneline --decorate --all
+  370  git branch-d feature1
+  371  git branch -d feature1
+  372  git log --oneline --decorate --all
+  373  git branch feature2
+  374  git checkout feature2
+  375  echo e > e.txt
+  376  git add -A
+  377  git status
+  378  git commit -m "e.txt"
+  379  git log --oneline --decorate --all
+  380  git log --oneline --decorate --all --graph
+  381  git checkout master
+  382  echo f > f.txt
+  383  git add -A
+  384  git commit -m "f.txt"
+  385  git log --oneline --decorate --all --graph
+  386  git merge feature2
+  387  git branch -d feature2
+  388  git checkout -b feature3
+  389  echo g2 > g.txt
+  390  git add -A
+  391  git commit -m "g.txt"
+  392  git checkout master
+  393  echo g1 > g.txt
+  394  git add -A
+  395  git commit -m "g.txt"
+  396  git merge feature3
+  397  vi g.txt
+  398  git add -A
+  399  git commit -m "g.txt"
+  400  git branch -d feature3
+  401  git log --oneline --decorate --all --graph
+  402  history
 
