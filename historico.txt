@@ -1,6 +1,7 @@
   310  cd treinamentos/
   311  mkdir github
   312  cd github/
+  313  mkdir todolist
   314  mkdir teste
   315  cd teste/
   316  git init
@@ -90,4 +91,46 @@
   400  git branch -d feature3
   401  git log --oneline --decorate --all --graph
   402  history
-
+  403  git checkout -b feature4
+  404  echo h > h.txt
+  405  git add -A
+  406  git status
+  407  git stash save "h.txt"
+  408  git status
+  409  git stash list
+  410  git stash apply stash@{0}
+  411  git stash drop stash@{0}
+  412  git stash save "h.txt"
+  413  git stash pop "h.txt"
+  414  git stash pop
+  415  git stash list
+  416  git status
+  417  git stash save "h.txt"
+  418  git stash branch feature5
+  419  git status
+  420  git add -A
+  421  git commit -m "incluido arquivo de historico"
+  422  git status
+  423  git push
+  424  git remote add origin https://github.com/rcnnagib/treinamentoGit-.git
+  425  git remote
+  426  git remote -v
+  427  git push origin master
+  428  git pull origin master
+  429  git clone https://github.com/rcnnagib/treinamentoGit-.git treinamentoGit2
+  430  cd ..
+  431  cd teste
+  432  cd treinamentoGit2/
+  433  echo h > h.txt
+  434  git add -A
+  435  git commit -m "h.txt"
+  436  git push origin master
+  437  cd ...
+  438  pwd
+  439  cd ..
+  440  pwd
+  441  git pull origin master
+  442  git pull origin master
+  443  git log --online --decorate --all --graph
+  444  git log --oneline --decorate --all --graph
+  445  git log --oneline --decorate --all --graph
